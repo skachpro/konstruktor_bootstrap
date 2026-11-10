@@ -1,0 +1,1 @@
+import {komponents} from "./komponents.js"
