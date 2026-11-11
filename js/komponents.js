@@ -734,4 +734,61 @@ export const komponents = {
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </nav>`
     },
+    "pagination": {
+        "basic": 
+        `<nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+                </li>
+            </ul>
+        </nav>`
+    },
+    "form": {
+        "basic": 
+        `<form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>`
+    },
+    "select": {
+        "basic": 
+        `<select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>`
+    },
+    "checkbox": {
+        "basic": 
+        `<div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+        <label class="form-check-label" for="checkDefault">
+            Default checkbox
+        </label>
+        </div>`
+    }
 }

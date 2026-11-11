@@ -1,0 +1,298 @@
+html {
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 84px calc(100vh - 84px - 36px) 36px;
+    font-family: "Roboto";
+    margin: 0;
+    height: 100%;
+    max-height: 100vh;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #6F2CF4;
+    color: #fff;
+}
+
+nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#logo-text {
+    font-size: 26px;
+}
+
+#logo-text span {
+    font-size: 16px;
+    font-family: "Montserrat";
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+#menu {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f0fc;
+    border-right: 2px solid #6F2CF4;
+    box-sizing: border-box;
+}
+
+#menu-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-list-item .menu-list-item-text{
+    display: block;
+    position: relative;
+    padding: 15px;
+    border-top: 2px solid #6F2CF4;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.menu-list-item .menu-list-item-text::after {
+    position: absolute;
+    content: "";
+    right: 40px;
+    top: calc(50% - 5px);
+    width: 10px;
+    height: 10px;
+    border: 2px solid #000;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(-45deg);
+    transition: .1s;
+}
+
+.menu-list-item-area {
+    width: 100%;
+    height: 150px;
+    border-top: 2px solid #6F2CF4;
+    background: #fff;
+}
+
+.menu-list-item:last-child .menu-list-item-area{
+    border-bottom: 2px solid #6F2CF4;
+}
+.menu-list-item-content{
+    padding: 0 !important;
+}
+
+
+#playground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-image:
+        linear-gradient(to right, #f4f0fc 1px, transparent 1px),
+        linear-gradient(to bottom, #f4f0fc 1px, transparent 1px);
+    background-attachment: fixed;
+    background-size: 20px 20px;
+    max-height: 100%;
+    padding: 50px 0;
+    overflow-y: scroll;
+}
+#playground::-webkit-scrollbar{
+    display: none;
+}
+
+#playground iframe {
+    width: 50%;
+    height: 95%;
+    background-color: #fff;
+    border: 1px solid #6F2CF4;
+}
+
+#toolbar {
+    position: relative;
+    height: 100%;
+    background-color: #f4f0fc;
+    border-left: 2px solid #6F2CF4;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+#toolbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* #toolbar .toolbar-btn {
+    position: absolute;
+    content: "";
+    border: 2px solid #6F2CF4;
+    background-color: #fff;
+    border-radius: 15px 0 0 15px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 40px;
+    top: 20%;
+    left: -50px;
+    cursor: pointer;
+}
+
+
+#toolbar::after {
+    position: absolute;
+    content: "";
+    border: 2px solid #000;
+    border-left: none;
+    border-bottom: none;
+    box-sizing: border-box;
+    width: 15px;
+    height: 15px;
+    top: calc(20% + 12px);
+    left: -35px;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+#toolbar.close::after {
+    transform: rotate(-135deg);
+}
+
+.toolbar-btn svg {
+    width: 100%;
+    height: 100%;/
+} */
+
+#toolbar-name {
+    margin-left: 30px;
+    font-size: 24px;
+}
+
+#toolbar .component-nazov {
+    margin: 0px;
+    padding: 15px 0 30px 0;
+    font-size: 24px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+footer {
+    display: grid;
+    background-color: #6F2CF4;
+}
+
+footer p {
+    display: inline;
+    align-self: center;
+    text-align: center;
+    color: #fff;
+    font-family: "Montserrat";
+    margin: 0;
+}
+
+.components {
+    list-style: none;
+    padding-left: 0;
+}
+
+.components-item {
+    padding: 15px 35px;
+    border-top: 2px solid #6F2CF4;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+#toolbar iframe {
+    border-radius: 15px;
+    border: 2px solid #6F2CF4;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* .iframe-area {
+    position: relative;
+}
+
+.cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;z-index: 2;
+} */
+
+.accordion-item::after {
+    position: absolute;
+    content: "";
+    right: 40px;
+    top: calc(50% - 5px);
+    width: 10px;
+    height: 10px;
+    border: 2px solid #000;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(135deg) !important;
+    transition: .1s;
+}
+.menu-list-item-content.close-area > * {
+    display: none;  
+}
+
+
+.active-accord::after {
+    transform: rotate(0deg);
+    transform: rotate(-45deg) !important;
+}
+
+.components-item:last-child {
+    border-bottom: 2px solid #6F2CF4;
+}
+
+.components-item:not(:last-child) {
+    border-bottom: none;
+}
+
+/* .hide-example-area {
+    display: block !important;
+} */
+
+/* .active-accord {
+    border-bottom: 2px solid #6F2CF4 !important;
+} */
+
+.components-preview-window {
+    /* display: none; */
+    padding: 15px;
+    background-color: #fff;
+    border-top: 2px solid #6F2CF4;
+}
